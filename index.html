@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh | Web Developer</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Young+Serif&display=swap');
+        body { font-family: 'Outfit', sans-serif; }
+        .serif { font-family: 'Young Serif', serif; }
+        .bg-mesh {
+            background-color: #ffffff;
+            background-image: radial-gradient(at 0% 0%, hsla(253,16%,7%,0) 0, transparent 50%), 
+                              radial-gradient(at 50% 0%, hsla(225,39%,30%,0.1) 0, transparent 50%), 
+                              radial-gradient(at 100% 0%, hsla(339,49%,30%,0.1) 0, transparent 50%);
+        }
+    </style>
+</head>
+
+<body class="bg-mesh text-gray-800">
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md px-6 py-4 flex justify-between items-center">
+    <div class="text-2xl font-bold">Adarsh<span class="text-rose-500">.</span></div>
+
+    <ul class="hidden md:flex space-x-8 text-sm font-medium">
+        <li><a href="#home" class="hover:text-rose-500 transition">Home</a></li>
+        <li><a href="#services" class="hover:text-rose-500 transition">Services</a></li>
+        <li><a href="#skills" class="hover:text-rose-500 transition">Skills</a></li>
+        <li><a href="#work" class="hover:text-rose-500 transition">My work</a></li>
+    </ul>
+
+    <div class="flex items-center space-x-4">
+        <i data-lucide="moon" class="w-5 h-5 cursor-pointer"></i>
+        <a href="#" class="border border-gray-300 rounded-full px-6 py-2 flex items-center gap-2 hover:bg-gray-50 transition">
+            Connect <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+        </a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header id="home" class="pt-32 pb-20 px-6 text-center">
+    <div data-aos="fade-up">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Adarsh"
+            class="w-24 h-24 mx-auto rounded-full mb-6">
+
+        <h3 class="text-lg mb-2">Hi! I'm Adarsh Uk 👋</h3>
+
+        <h1 class="serif text-4xl md:text-6xl mb-6 max-w-2xl mx-auto">
+            frontend web developer
+        </h1>
+
+        <p class="text-gray-500 max-w-xl mx-auto">
+            I build modern, fast, and responsive web applications.
+        </p>
+    </div>
+</header>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 px-6 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+        <span class="text-gray-400 text-sm">What i offer</span>
+        <h2 class="serif text-4xl mt-2">My services</h2>
+    </div>
+
+    <div id="services-grid" class="grid grid-cols-1 md:grid-cols-4 gap-6"></div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="text-gray-400 text-sm">Technologies</span>
+            <h2 class="serif text-4xl mt-2">My Skills</h2>
+        </div>
+
+        <div id="skills-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6"></div>
+    </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="py-20 px-6 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+        <span class="text-gray-400 text-sm">My portfolio</span>
+        <h2 class="serif text-4xl mt-2">My latest work</h2>
+    </div>
+
+    <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+</section>
+
+<section id="contact" class="py-20 px-6 max-w-4xl mx-auto" data-aos="fade-up">
+    <div class="text-center mb-12">
+        <span class="text-gray-400 text-sm">Connect with me</span>
+        <h2 class="serif text-4xl mt-2">Get in touch</h2>
+        <p class="text-gray-500 mt-4">
+            I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.
+        </p>
+    </div>
+
+    <form id="contact-form" class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="text" placeholder="Enter your name" required
+                class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-rose-300 transition-colors bg-white/50">
+            <input type="email" placeholder="Enter your email" required
+                class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-rose-300 transition-colors bg-white/50">
+        </div>
+        <textarea placeholder="Enter your message" rows="6" required
+            class="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-rose-300 transition-colors bg-white/50"></textarea>
+        
+        <div class="text-center pt-4">
+            <button type="submit" 
+                class="bg-black text-white px-10 py-4 rounded-full flex items-center gap-2 mx-auto hover:bg-gray-800 transition transform hover:scale-105">
+                Submit now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+        </div>
+    </form>
+
+    <div class="mt-24 text-center border-t border-gray-100 pt-16">
+        <div class="text-3xl font-bold mb-4">Adarsh<span class="text-rose-500">.</span></div>
+        <div class="flex justify-center items-center gap-2 text-gray-500 hover:text-rose-500 transition cursor-pointer">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+            <span>greatstackdev@gmail.com</span>
+        </div>
+    </div>
+</section>
+
+<footer class="py-8 px-6 border-t border-gray-100">
+    <div class="max-w-6xl mx-auto flex flex-col md:row justify-between items-center gap-4 text-xs text-gray-400">
+        <p>© 2025 Adarsh Uk. All rights reserved.</p>
+        <div class="flex gap-8">
+            <a href="#" class="hover:text-gray-900 transition">Terms of Services</a>
+            <a href="#" class="hover:text-gray-900 transition">Privacy Policy</a>
+            <a href="#" class="hover:text-gray-900 transition">Connect with me</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    lucide.createIcons();
+    AOS.init({ duration: 1000, once: true });
+
+    /* ---------------- SERVICES ---------------- */
+    const services = [
+        { title: "Backend Development", desc: " Developing with Nodejs , MongoDb", icon: "layout-template" },
+        { title: "Frontend Development", desc: "React, Tailwind, and modern UI.", icon: "code" },
+        { title: "Responsive Mobile UI", desc: "Clean and intuitive mobile interfaces.", icon: "smartphone" },
+        { title: "UI/UX Design", desc: "User-focused design experiences.", icon: "palette" }
+    ];
+
+    const servicesGrid = document.getElementById("services-grid");
+    servicesGrid.innerHTML = services.map((s, i) => `
+        <div class="p-8 border border-gray-100 rounded-3xl bg-white hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="${i*100}">
+            <i data-lucide="${s.icon}" class="w-8 h-8 text-rose-500 mb-6"></i>
+            <h3 class="font-bold text-lg mb-3">${s.title}</h3>
+            <p class="text-sm text-gray-500">${s.desc}</p>
+        </div>
+    `).join("");
+
+    /* ---------------- SKILLS ---------------- */
+    const skills = [
+        { name: "HTML", icon: "code" },
+        { name: "CSS", icon: "paintbrush" },
+        { name: "JavaScript", icon: "cpu" },
+        { name: "React", icon: "atom" },
+        { name: "Tailwind", icon: "wind" },
+        { name: "Node.js", icon: "server" },
+        { name: "Express", icon: "terminal" },
+        { name: "MongoDB", icon: "database" },
+        { name: "Git", icon: "git-branch" },
+        { name: "Figma", icon: "figma" }
+    ];
+
+    const skillsGrid = document.getElementById("skills-grid");
+    skillsGrid.innerHTML = skills.map((skill, i) => `
+        <div class="p-6 bg-gray-50 rounded-2xl text-center hover:shadow-md transition" data-aos="zoom-in" data-aos-delay="${i*50}">
+            <i data-lucide="${skill.icon}" class="w-8 h-8 mx-auto mb-3 text-rose-500"></i>
+            <p class="text-sm font-semibold">${skill.name}</p>
+        </div>
+    `).join("");
+
+    /* ---------------- PROJECTS ---------------- */
+    const projects = [
+    {
+        title: "Quick Cart-Admin",
+        category: "Web App",
+        image: "images/Untitled design (3).png",
+        link: "https://quick-cart-gm6k.vercel.app"
+    },
+    {
+        title: "Quick Cart - User",
+        category: "Web App",
+        image: "images/Untitled design (5).png",
+        link: "https://quick-cart-3eep.vercel.app/"
+    },
+    {
+        title: "AI Quiz",
+        category: "Web App",
+        image: "images/Untitled design (4).png",
+        link: "https://quiz-ai-bo6d.vercel.app/"
+    },
+    {
+        title: "FeEzy-Fee Management",
+        category: "Web Application",
+        image: "images/Untitled design (6).png",
+        link: "https://collectfee-k2l7.vercel.app/"
+    }
+];
+
+
+    const grid = document.getElementById("project-grid");
+    if (!grid) return;
+
+    grid.innerHTML = projects.map((project, index) => `
+           <div class="relative group overflow-hidden  border rounded-2xl"
+     data-aos="fade-up"
+     data-aos-delay="${index * 100}">
+     
+    <img src="${project.image}" alt="${project.title}"
+         onerror="this.src='https://picsum.photos/600/800?grayscale';"
+         class="w-full h-80 object-cover transition-transform duration-500 md:group-hover:scale-110">
+
+    <a href="${project.link}" target="_blank" rel="noopener noreferrer"
+       class="
+       absolute bottom-4 left-4 right-4 
+       bg-white/95 backdrop-blur-sm p-4 rounded-xl 
+       flex justify-between items-center 
+       shadow-lg
+
+       /* Mobile: always visible */
+       opacity-100 translate-y-0
+
+       /* Desktop: hover animation */
+       md:translate-y-2 md:opacity-0 
+       md:group-hover:translate-y-0 
+       md:group-hover:opacity-100 
+       transition-all duration-300
+       ">
+       
+        <div>
+            <h4 class="font-bold text-sm text-gray-900">${project.title}</h4>
+            <p class="text-xs text-gray-500">${project.category}</p>
+        </div>
+
+        <div class="bg-[#bfff00] p-2.5 rounded-full border border-gray-200 shadow-sm md:group-hover:-rotate-12 transition-transform">
+            <i data-lucide="external-link" class="w-4 h-4 text-black"></i>
+        </div>
+    </a>
+</div>
+
+    
+    `).join("");
+
+    lucide.createIcons();
+});
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('button');
+    const originalText = btn.innerHTML;
+    
+    // Simple feedback animation
+    btn.innerHTML = 'Sending...';
+    btn.disabled = true;
+
+    setTimeout(() => {
+        btn.innerHTML = 'Message Sent! ✓';
+        btn.classList.replace('bg-black', 'bg-green-600');
+        this.reset();
+        
+        setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.classList.replace('bg-green-600', 'bg-black');
+            btn.disabled = false;
+        }, 3000);
+    }, 1500);
+});
+</script>
+
+</body>
+</html>
